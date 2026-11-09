@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>품장 | 나주점, 을왕리점 장어 숯불구이</title>
+  <meta name="description" content="품질 좋은 장어, 품격 있는 장소. 나주 삼원수산 양식장의 토종 자포니카 장어를 참숯 위에서 굽는 품장 나주점과 을왕리점입니다.">
+  <meta name="theme-color" content="#0F2E36">
+  <link rel="icon" href="assets/logo/seal.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="품장 | 나주점, 을왕리점 장어 숯불구이">
+  <meta property="og:description" content="품질 좋은 장어, 품격 있는 장소. 참숯 위에서 굽는 토종 민물장어.">
+  <meta property="og:image" content="assets/og-image.jpg">
+  <meta property="og:locale" content="ko_KR">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@200..700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/img/hero-salt.webp" fetchpriority="high">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script>
+    // 인트로는 세션당 한 번만, 모션 줄이기 설정이면 생략
+    (function () {
+      var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var seen = false;
+      try { seen = sessionStorage.getItem('pumjang-intro') === '1'; } catch (e) {}
+      if (!reduce && !seen) document.documentElement.classList.add('has-intro');
+    })();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Restaurant",
+        "name": "품장 나주점",
+        "servesCuisine": "장어구이",
+        "telephone": "+82-61-334-1300",
+        "openingHours": "Mo-Su 11:30-21:30",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "노안면 건재로 524-11",
+          "addressLocality": "나주시",
+          "addressRegion": "전라남도",
+          "addressCountry": "KR"
+        }
+      },
+      {
+        "@type": "Restaurant",
+        "name": "품장 을왕리점",
+        "servesCuisine": "장어구이",
+        "telephone": "+82-32-751-1239",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "용유서로 402-11",
+          "addressLocality": "중구",
+          "addressRegion": "인천광역시",
+          "addressCountry": "KR"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
+  <!-- 인트로: 먹 원이 그려지고 品長이 찍힌 뒤 걷힘 -->
+  <div class="intro" aria-hidden="true">
+    <div class="intro__mark">
+      <img class="intro__ring" src="assets/logo/enso-ring.webp" alt="" width="720" height="785">
+      <span class="intro__hanja"></span>
+    </div>
+  </div>
+
+  <header class="site-header" data-header>
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="#top" aria-label="품장 처음으로">
+        <img src="assets/logo/pumjang-wordmark-light.svg" alt="품장" width="148" height="100">
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="주요 메뉴">
+        <ul class="site-nav__list">
+          <li><a href="#story">이야기</a></li>
+          <li><a href="#origin">산지</a></li>
+          <li><a href="#menu">메뉴</a></li>
+          <li><a href="#places">매장</a></li>
+          <li><a href="#store">온라인 스토어</a></li>
+        </ul>
+        <a class="site-nav__cta" href="#places">예약 문의</a>
+      </nav>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle__label">메뉴 열기</span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- 히어로 -->
+    <section class="hero" id="top" aria-label="품장 소개">
+      <div class="hero__media">
+        <img src="assets/img/hero-salt.webp" alt="참숯 화로 앞에서 손질한 장어에 굵은 소금을 뿌리는 모습" width="2400" height="1600" fetchpriority="high">
+      </div>
+      <div class="hero__copy">
+        <h1 class="hero__title">
+          <span class="hero__line">품질 좋은 장어</span>
+          <span class="hero__line">품격 있는 장소</span>
+        </h1>
+        <img class="hero__seal" src="assets/logo/seal.svg" alt="" width="68" height="67">
+      </div>
+      <p class="hero__sub">나주와 을왕리, 참숯 위에서 굽는 토종 민물장어</p>
+    </section>
+
+    <!-- 이야기 -->
+    <section class="story paper" id="story" aria-labelledby="story-title">
+      <div class="story__inner">
+        <div class="story__text">
+          <h2 class="section-title" id="story-title">기른 곳을 아는 장어만 굽습니다</h2>
+          <p>품장의 장어는 나주 삼원수산 양식장에서 옵니다. 2009년부터 장어를 길러 온 곳에서 토종 자포니카 장어를 받아, 참숯 위에서 소금 또는 양념으로 굽습니다.</p>
+          <p>좋은 장어를 고르는 일, 알맞게 굽는 일, 편히 머무를 자리를 한곳에 담았습니다.</p>
+        </div>
+        <figure class="story__figure">
+          <img src="assets/img/story-fire.webp" alt="화덕 안에서 붉게 타오르는 참숯" width="1400" height="934" loading="lazy">
+        </figure>
+      </div>
+    </section>
+
+    <!-- 산지 -->
+    <section class="origin dark" id="origin" aria-labelledby="origin-title">
+      <figure class="origin__wide">
+        <img src="assets/img/farm-tanks.webp" alt="어두운 실내 양식장에 줄지어 있는 장어 수조" width="2000" height="1334" loading="lazy">
+      </figure>
+      <div class="origin__inner">
+        <div class="origin__head">
+          <h2 class="section-title" id="origin-title">나주 삼원수산 양식장</h2>
+          <p class="lead">삼원수산 민물장어는 자연 상태와 가장 가까운 환경에서 건강하고 안전하게 키웁니다.</p>
+        </div>
+        <div class="origin__body">
+          <figure class="origin__tall">
+            <img src="assets/img/farm-net.webp" alt="뜰채에 담겨 올라오는 살아 있는 장어" width="1000" height="1500" loading="lazy">
+          </figure>
+          <div class="origin__facts">
+            <dl class="facts">
+              <div class="facts__row">
+                <dt>양식</dt>
+                <dd>2009년부터 장어만 길러 왔습니다.</dd>
+              </div>
+              <div class="facts__row">
+                <dt>품종</dt>
+                <dd>100% 자포니카산 토종 장어를 씁니다.</dd>
+              </div>
+              <div class="facts__row">
+                <dt>물</dt>
+                <dd>지하 천연 암반수로 키웁니다.</dd>
+              </div>
+              <div class="facts__row">
+                <dt>검사</dt>
+                <dd>국립수산물품질관리원의 정기 안전성 검사를 받습니다.</dd>
+              </div>
+            </dl>
+            <h3 class="sub-title">인증</h3>
+            <ul class="certs">
+              <li>무항생제 수산물 인증 <span>제15-04-0003호</span></li>
+              <li>HACCP 위해요소중점관리기준 <span>AQ-0036</span></li>
+              <li>수산물 이력추적관리 등록</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 메뉴 -->
+    <section class="menu paper" id="menu" aria-labelledby="menu-title">
+      <div class="menu__inner">
+        <h2 class="section-title" id="menu-title">메뉴</h2>
+        <div class="menu__layout">
+          <ul class="menu__list" role="list">
+            <li class="menu-item is-active" data-menu="grill">
+              <button class="menu-item__trigger" type="button" aria-pressed="true" aria-controls="menu-stage">
+                <span class="menu-item__name">장어 소금구이</span>
+                <span class="menu-item__desc">굵은 소금만 뿌려 참숯 위에서 굽습니다. 구운 양파와 아스파라거스를 곁들입니다.</span>
+              </button>
+              <img class="menu-item__img" src="assets/img/menu-grill.webp" alt="석쇠 위에서 노릇하게 구워진 장어 소금구이와 구운 양파, 아스파라거스" width="1600" height="1066" loading="lazy">
+            </li>
+            <li class="menu-item" data-menu="set">
+              <button class="menu-item__trigger" type="button" aria-pressed="false" aria-controls="menu-stage">
+                <span class="menu-item__name">장어 정식</span>
+                <span class="menu-item__desc">양념 장어구이에 밥과 국, 반찬을 곁들인 한 상입니다.</span>
+              </button>
+              <img class="menu-item__img" src="assets/img/menu-set.webp" alt="나무 쟁반에 차린 양념 장어구이와 밥, 국, 반찬" width="1600" height="1066" loading="lazy">
+            </li>
+            <li class="menu-item" data-menu="tang">
+              <button class="menu-item__trigger" type="button" aria-pressed="false" aria-controls="menu-stage">
+                <span class="menu-item__name">장어탕</span>
+                <span class="menu-item__desc">장어를 넣고 뚝배기에 끓여 냅니다.</span>
+              </button>
+              <img class="menu-item__img" src="assets/img/menu-tang.webp" alt="두 손으로 받쳐 든 뚝배기 장어탕" width="1600" height="1066" loading="lazy">
+            </li>
+            <li class="menu-item" data-menu="bibim">
+              <button class="menu-item__trigger" type="button" aria-pressed="false" aria-controls="menu-stage">
+                <span class="menu-item__name">장어 비빔밥</span>
+                <span class="menu-item__desc">장어구이와 여러 가지 채소를 밥 위에 얹었습니다.</span>
+              </button>
+              <img class="menu-item__img" src="assets/img/menu-bibim.webp" alt="놋그릇에 담긴 장어 비빔밥" width="1600" height="1066" loading="lazy">
+            </li>
+          </ul>
+          <div class="menu__stage" id="menu-stage" aria-live="polite">
+            <img class="is-active" data-menu="grill" src="assets/img/menu-grill.webp" alt="석쇠 위에서 노릇하게 구워진 장어 소금구이와 구운 양파, 아스파라거스" width="1600" height="1066" loading="lazy">
+            <img data-menu="set" src="assets/img/menu-set.webp" alt="나무 쟁반에 차린 양념 장어구이와 밥, 국, 반찬" width="1600" height="1066" loading="lazy">
+            <img data-menu="tang" src="assets/img/menu-tang.webp" alt="두 손으로 받쳐 든 뚝배기 장어탕" width="1600" height="1066" loading="lazy">
+            <img data-menu="bibim" src="assets/img/menu-bibim.webp" alt="놋그릇에 담긴 장어 비빔밥" width="1600" height="1066" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 굽는 순서 -->
+    <section class="craft dark" id="craft" aria-labelledby="craft-title">
+      <div class="craft__inner">
+        <h2 class="section-title" id="craft-title">참숯 위에서 익어 가는 순서</h2>
+        <ol class="craft__steps">
+          <li class="step">
+            <img src="assets/img/process-1.webp" alt="화로에 담긴 참숯" width="900" height="1125" loading="lazy">
+            <p>참숯을 피웁니다</p>
+          </li>
+          <li class="step">
+            <img src="assets/img/process-2.webp" alt="석쇠에 올린 손질한 장어" width="900" height="1125" loading="lazy">
+            <p>손질한 장어를 올립니다</p>
+          </li>
+          <li class="step">
+            <img src="assets/img/process-3.webp" alt="집게로 들어 올린 반쯤 익은 장어" width="900" height="1125" loading="lazy">
+            <p>껍질 쪽부터 천천히 익힙니다</p>
+          </li>
+          <li class="step">
+            <img src="assets/img/process-4.webp" alt="연기가 오르는 석쇠 위 장어" width="900" height="1125" loading="lazy">
+            <p>뒤집어 살을 노릇하게 굽습니다</p>
+          </li>
+          <li class="step">
+            <img src="assets/img/process-5.webp" alt="젓가락으로 집어 든 장어구이 한 점" width="900" height="1125" loading="lazy">
+            <p>한입 크기로 잘라 냅니다</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 매장 -->
+    <section class="places paper" id="places" aria-labelledby="places-title">
+      <div class="places__inner">
+        <h2 class="section-title" id="places-title">매장 안내</h2>
+
+        <article class="place" aria-labelledby="place-naju">
+          <div class="place__media">
+            <img class="place__main" src="assets/img/naju-front.webp" alt="품장 나주점 외관" width="1600" height="1066" loading="lazy">
+            <img class="place__sub" src="assets/img/naju-court.webp" alt="나주점 소나무 중정" width="900" height="1350" loading="lazy">
+          </div>
+          <div class="place__info">
+            <h3 class="place__name" id="place-naju">나주점</h3>
+            <p class="place__desc">삼원수산 양식장이 있는 나주에 자리한 매장입니다. 소나무 중정을 둘러싼 홀에서 식사하실 수 있습니다.</p>
+            <dl class="place__meta">
+              <div><dt>주소</dt><dd>전라남도 나주시 노안면 건재로 524-11</dd></div>
+              <div><dt>전화</dt><dd><a href="tel:0613341300">061-334-1300</a></dd></div>
+              <div><dt>영업시간</dt><dd>11:30 – 21:30</dd></div>
+            </dl>
+            <div class="place__actions">
+              <a class="btn btn--solid" href="tel:0613341300">나주점에 전화하기</a>
+              <a class="btn btn--line" href="https://map.naver.com/p/search/%ED%92%88%EC%9E%A5%20%EB%82%98%EC%A3%BC%EC%A0%90" target="_blank" rel="noopener">네이버 지도에서 보기</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="place place--flip" aria-labelledby="place-eulwang">
+          <div class="place__media">
+            <img class="place__main" src="assets/img/eulwang-dusk.webp" alt="해 질 무렵 불이 켜진 품장 을왕리점 건물" width="1600" height="1066" loading="lazy">
+            <img class="place__sub" src="assets/img/eulwang-sea.webp" alt="을왕리점 창가 좌석에서 보이는 바다" width="1000" height="666" loading="lazy">
+          </div>
+          <div class="place__info">
+            <h3 class="place__name" id="place-eulwang">을왕리점</h3>
+            <p class="place__desc">을왕리 바다가 내려다보이는 창가 좌석이 있는 매장입니다.</p>
+            <dl class="place__meta">
+              <div><dt>주소</dt><dd>인천광역시 중구 용유서로 402-11</dd></div>
+              <div><dt>전화</dt><dd><a href="tel:0327511239">032-751-1239</a></dd></div>
+              <!-- TODO: 을왕리점 영업시간 확인 후 입력 -->
+              <div><dt>영업시간</dt><dd>전화로 문의해 주세요</dd></div>
+            </dl>
+            <div class="place__actions">
+              <a class="btn btn--solid" href="tel:0327511239">을왕리점에 전화하기</a>
+              <a class="btn btn--line" href="https://map.naver.com/p/search/%ED%92%88%EC%9E%A5%20%EC%9D%84%EC%99%95%EB%A6%AC%EC%A0%90" target="_blank" rel="noopener">네이버 지도에서 보기</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 온라인 스토어 -->
+    <section class="store dark" id="store" aria-labelledby="store-title">
+      <div class="store__inner">
+        <div class="store__intro">
+          <h2 class="section-title" id="store-title">매장에서 먹던 그 맛, 집에서도</h2>
+          <p class="lead">손질 장어와 초벌 장어를 장어구이 양념, 생강채와 함께 냉장 포장해 보내 드립니다. 양념은 순한맛과 매운맛 중에 고르실 수 있습니다.</p>
+          <div class="store__actions">
+            <a class="btn btn--light" href="https://smartstore.naver.com/samwon1238/" target="_blank" rel="noopener">스마트스토어에서 주문하기</a>
+            <a class="btn btn--ghost" href="tel:0613340073">삼원수산 061-334-0073</a>
+          </div>
+        </div>
+        <figure class="store__figure">
+          <img src="assets/img/store-eel.webp" alt="검은 그릇 위에 노릇하게 구운 장어 두 마리와 양념, 생강채" width="1400" height="934" loading="lazy">
+        </figure>
+
+        <div class="howto">
+          <h3 class="sub-title">집에서 굽는 법</h3>
+          <div class="howto__cols">
+            <div class="howto__col">
+              <h4>프라이팬</h4>
+              <p class="howto__note">손질 장어는 등부터, 초벌 장어는 뱃살부터 굽습니다.</p>
+              <ol>
+                <li>달군 팬에 기름을 살짝 두르고 장어를 올립니다.</li>
+                <li>뒤집어서 반대쪽이 노릇해질 때까지 굽습니다.</li>
+                <li>잘라서 세워 조금 더 익힌 뒤 양념에 찍어 드세요.</li>
+              </ol>
+            </div>
+            <div class="howto__col">
+              <h4>에어프라이어</h4>
+              <ol>
+                <li>200도로 5분간 예열합니다.</li>
+                <li>등이 바닥으로 가게 놓고 190도에서 15분 굽습니다. 소금구이는 이때 소금 간을 합니다.</li>
+                <li>뒤집어서 190도로 10~15분 더 익힙니다.</li>
+                <li>양념구이는 80% 정도 익었을 때 양념을 발라 5분 더 굽습니다.</li>
+                <li>가위로 잘라 옆면까지 익힌 뒤 드세요.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__brand">
+        <img src="assets/logo/pumjang-wordmark-light.svg" alt="품장" width="178" height="120" loading="lazy">
+        <p>품질 좋은 장어, 품격 있는 장소</p>
+      </div>
+      <div class="site-footer__places">
+        <div>
+          <h2>나주점</h2>
+          <p>전라남도 나주시 노안면 건재로 524-11<br><a href="tel:0613341300">061-334-1300</a></p>
+        </div>
+        <div>
+          <h2>을왕리점</h2>
+          <p>인천광역시 중구 용유서로 402-11<br><a href="tel:0327511239">032-751-1239</a></p>
+        </div>
+      </div>
+      <ul class="site-footer__links">
+        <li><a href="https://www.instagram.com/pumjang_eel" target="_blank" rel="noopener">인스타그램</a></li>
+        <li><a href="https://naver.me/5apDLo7h" target="_blank" rel="noopener">네이버 플레이스</a></li>
+        <li><a href="https://smartstore.naver.com/samwon1238/" target="_blank" rel="noopener">스마트스토어</a></li>
+      </ul>
+      <p class="site-footer__copy">© 2026 품장. 장어 공급 삼원수산</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
