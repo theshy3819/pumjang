@@ -1,0 +1,20 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Restaurant",
+      "name": "품장 나주점",
+      "servesCuisine": "장어구이",
+      "telephone": "+82-61-334-1300",
+      "openingHours": "Mo-Su 11:30-21:30",
+      "address": { "@type": "PostalAddress", "streetAddress": "노안면 건재로 524-11", "addressLocality": "나주시", "addressRegion": "전라남도", "addressCountry": "KR" }
+    },
+    {
+      "@type": "Restaurant",
+      "name": "품장 을왕리점",
+      "servesCuisine": "장어구이",
+      "telephone": "+82-32-751-1239",
+      "address": { "@type": "PostalAddress", "streetAddress": "용유서로 402-11", "addressLocality": "중구", "addressRegion": "인천광역시", "addressCountry": "KR" }
+    }
+  ]
+}
