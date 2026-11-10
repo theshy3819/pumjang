@@ -193,7 +193,7 @@ preload: assets/img/grill-smoke.webp
           <span class="line"><span>을왕리에 새로 지은</span></span>
           <span class="line"><span>넓은 홀에서 여유 있게</span></span>
         </h2>
-        <p class="lead">인천 중구 용유서로 402-11. 큰 홀과 넓은 주차장을 갖춘 품장 을왕리점입니다.</p>
+        <p class="lead">인천 중구 <span class="nobr">용유서로 402-11</span>. 큰 홀과 넓은 주차장을 갖춘 품장 을왕리점입니다.</p>
         <a class="btn btn--light" href="eulwang.html">을왕리점 둘러보기 {{icon_arrow}}</a>
       </div>
     </section>
@@ -221,19 +221,21 @@ preload: assets/img/grill-smoke.webp
     <!-- 예약 -->
     <section class="reserve-band deep">
       <div class="wrap reserve-band__grid">
-        <div>
+        <div class="reserve-band__intro">
           <h2 class="title" data-reveal><span class="line"><span>예약 문의</span></span></h2>
           <p class="lead">전화나 네이버 플레이스로 예약하실 수 있습니다.</p>
+          <a class="btn btn--light" href="reservation.html">예약 안내 보기</a>
         </div>
         <div class="reserve-band__branch">
           <h3>나주점</h3>
           <a class="tel" href="tel:0613341300">061-334-1300</a>
-          <p class="note">11:30 – 21:30, 평일 15:00 – 17:00 준비 시간</p>
+          <p class="note">11:30 – 21:30, 평일 15:00 – 17:00 <span class="nobr">준비 시간</span></p>
         </div>
         <div class="reserve-band__branch">
           <h3>을왕리점</h3>
           <a class="tel" href="tel:0327511239">032-751-1239</a>
-          <a class="btn btn--light" href="reservation.html">예약 안내 보기</a>
+          <!-- TODO: 을왕리점 영업시간 확인 후 입력 -->
+          <p class="note">영업시간은 전화로 문의해 주세요</p>
         </div>
       </div>
     </section>
